@@ -1,5 +1,23 @@
 {
-  "dependencies": {
-    "init": "^0.1.2"
-  }
+  "name": "nodejsaakash",
+  "version": "1.0.0",
+  "description": "learning node js from aaskash sir",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikashage21/NareshIT_Nodejs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "vikash sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikashage21/NareshIT_Nodejs/issues"
+  },
+  "homepage": "https://github.com/vikashage21/NareshIT_Nodejs#readme"
 }
