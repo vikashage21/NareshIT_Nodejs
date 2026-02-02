@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "learning node js from aaskash sir",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/vikashage21/NareshIT_Nodejs/issues"
   },
-  "homepage": "https://github.com/vikashage21/NareshIT_Nodejs#readme"
+  "homepage": "https://github.com/vikashage21/NareshIT_Nodejs#readme",
+  "dependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2"
+  }
 }
