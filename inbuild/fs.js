@@ -30,15 +30,22 @@ let fs = require('fs')
 // async 
 
 
-const data = fs.readFileSync('text.txt',{encoding:'utf-8', flag:'r'})
+// const data = fs.readFileSync('text.txt',{encoding:'utf-8', flag:'r'})
 
-console.log(data)
+// console.log(data)
 
 
-fs.unlink('text.txt', err=>{
+// fs.unlink('text.txt', err=>{
+// 	if(err) throw err ;
+// 	console.log('file deleted')
+// })
+
+
+// rename
+
+fs.rename('test.txt' , 'myfile.txt' , (err)=>{
 	if(err) throw err ;
-	console.log('file deleted')
+	console.log('file name changed')
 })
-
 
 
