@@ -4,6 +4,16 @@ import { productDetailsController } from '../controller/productDetailsContoller.
 
 export const PRODUCT_ROUTER = express.Router() 
 
+   /**
+         * @swagger
+         * /product:
+         *   get:
+         *     summary: Get all products
+         *     responses:
+         *       200:
+         *         description: List of products
+         */
+
 
 PRODUCT_ROUTER.get('/' ,productController )
 
