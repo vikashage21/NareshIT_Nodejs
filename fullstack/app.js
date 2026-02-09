@@ -8,19 +8,41 @@ import morgan from 'morgan';
 import fs from 'fs'
 import swaggerUi from 'swagger-ui-express'
 import swaggerJsdoc from 'swagger-jsdoc'
-import {options} from './swaggerConfig.js'
+import { options } from './swaggerConfig.js'
+import path from 'path' 
+import {fileURLToPath } from 'url'
 configDotenv()
 
 const APP = express()
- const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
+const __filename = fileURLToPath(import.meta.url)
+const  __dirname = path.dirname(__filename)
 
 // middlewares
 
 APP.use(morgan('common', {
     stream: fs.createWriteStream('./app.log')
-})) //enable morgan  : - it is used to debug the what http request to hiting like Get /product
+})) //enable morgan  : - it is used to debug the what http request to hit like Get /product
 
 APP.use(express.json())
+
+
+
+
+// =================== ejs setup 
+// static files
+
+APP.use(express.static(__dirname + '/public'))
+
+
+
+// html file path
+
+APP.set('views', './src/views')
+
+// setting view engine
+
+APP.set('view engine', 'ejs')
 
 // routes
 

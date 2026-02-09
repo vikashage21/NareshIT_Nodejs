@@ -1,5 +1,5 @@
 export const getUsers = (req, res) => {
-    res.send('hello from server')
+    res.render('index' ,{title:"hello this is server side"})
 }
 
 
