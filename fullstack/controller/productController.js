@@ -19,11 +19,13 @@ export const productController = async (req, res) => {
 
 
      
-        res.status(200).json({
-            success: true,
-            count: PRODUCTS.length,
-            data: PRODUCTS
-        })
+        // res.status(200).json({
+        //     success: true,
+        //     count: PRODUCTS.length,
+        //     data: PRODUCTS
+        // })
+
+        res.render('product' ,{PRODUCTS})
 
     } catch (error) {
         console.log('error while fetching products'), res.status(500).json({

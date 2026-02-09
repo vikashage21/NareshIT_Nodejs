@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page </title>
+</head>
+
+<body>
+    <% for( let i=0; i < PRODUCTS.length; i++ ) { %>
+
+
+        <div style="width:250px; background: #00000081; color:#fff; text-align: center;">
+
+
+            <p>
+                <%=PRODUCTS[i].name%>
+            </p>
+            <p>
+                <%=PRODUCTS[i].category%>
+            </p>
+            <p>
+                <%=PRODUCTS[i].price%>
+            </p>
+            <p>
+                <%=PRODUCTS[i].stock%>
+            </p>
+            <p>
+                <%=PRODUCTS[i].rating%>
+            </p>
+            <p>
+                <%=PRODUCTS[i].brand%>
+            </p>
+            <p>
+                <%=PRODUCTS[i].description%>
+            </p>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <% } %>
+
+</body>
+
+</html>

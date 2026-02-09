@@ -1,4 +1,17 @@
-<h1>
+<!-- creating navbar -->
+<header>
+    <nav>
+        <ul>
 
-    hello form ejs <%= title %>
-</h1>
+            <% for( let i=0; i < MENU.length; i++ ) { %>
+
+                <a href="<%=MENU[i].link  %>">
+                    <%=MENU[i].name%>
+                </a>
+
+                <% } %>
+        </ul>
+
+    </nav>
+
+</header>
