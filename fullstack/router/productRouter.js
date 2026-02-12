@@ -17,4 +17,4 @@ export const PRODUCT_ROUTER = express.Router()
 
 PRODUCT_ROUTER.get('/' ,productController )
 
-PRODUCT_ROUTER.get('/details' , productDetailsController )
+PRODUCT_ROUTER.get('/details/:id' , productDetailsController )

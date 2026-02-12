@@ -1,6 +1,6 @@
 //menu data
 
-const MENU = [
+const MENU = [ 
     {
         name: "category",
         link: "/api/category"
