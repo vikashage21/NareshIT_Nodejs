@@ -1,6 +1,9 @@
 import { MongoClient, ObjectId } from "mongodb";
-
-const client = new MongoClient(process.env.DATABASE_URL);
+import { configDotenv } from 'dotenv';
+configDotenv()
+const url = process.env.DATABASE_URL;
+console.log(url)
+const client = new MongoClient(url);
 
 export const productDetailsController = async (req, res) => {
   try {
